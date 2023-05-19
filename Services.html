@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Cloud Computing</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				margin: 0;
+				overflow: clip;
+			}
+			.header {
+				text-align: left;
+				background: #808080;
+				color: white;
+				padding: 15px;
+			}
+			.header h1 {
+				font-size: 20px;
+				
+			}
+			.navbar {
+				overflow: hidden;
+				background-color: #333;
+			}
+			.navbar a.right{
+				float: right;
+			}
+			.navbar a:hover {
+				background-color: #ddd;
+				color: black;
+			}
+			.navbar a {
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 20px;
+				text-decoration: none;
+			}
+			#Here {
+				background: green;
+				color: white;
+			}
+			.row {  
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+			.side {
+				flex: 30%;
+				background-color: #f1f1f1;
+				padding: 20px;
+			}
+			.main {   
+				flex: 70%;
+				background-color: white;
+				padding: 30px;
+				overflow: scroll;
+				height: 900px;
+			}
+			.img {
+				width: 100%;
+			}
+			.images {
+				padding-left: 120px;
+			}
+			.popup {
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				user-select: none;
+			}
+
+			.popup .popuptext {
+				visibility: hidden;
+				width: 160px;
+				background-color: #555;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 8px 0;
+				position: absolute;
+				z-index: 1;
+				bottom: 125%;
+				left: 50%;
+				margin-left: -80px;
+			}
+
+			.popup .popuptext::after {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: #555 transparent transparent transparent;
+			}
+
+			.popup .show {
+				visibility: visible;
+			}
+
+			.share-btns { 
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				display: block-inline;
+				align-items:center;
+				justify-content: center;
+			}
+
+			.share-btn {
+				display: inline-block;
+				color: #ffffff;
+				border: none;
+				padding: 0.1em 0.6em;
+				outline: none;
+				text-align: center;
+				font-size: 0.9em;
+				margin: 0 0.2em;
+				text-decoration: none;
+			}
+			
+			.share-btn:hover {
+				text-decoration: none;
+				opacity: 0.8;
+			}
+
+			.share-btn:active {
+				color: #e2e2e2;
+			}	
+			.share-btn.facebook { background: #3B5998; }
+			.share-btn.email { background: #444444; }
+			li a{
+				color: #72a5f7;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;Cloud Computing</h1> <!-- header title -->
+		</div>
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="Services.html" id="Here">Services</a>
+			<a href="About.html">About</a>
+			<a href="Contact.html" class="right">Contact</a>
+		</div>
+		<div class="row">
+			<div class="side">
+				<h2 style="display:inline;">Cloud Computing<img src="rain-clouds-png-27.png" style="height:100px; width: 200px;" alt="You need Internet in order for the Image to load..."></img></h2>
+				
+				<p>"It is not computing in the cloud.. it is the delivery of computing services over the 'cloud' ( The internet )".</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<h4 style="padding-left: 115px;">More of Cloud Computing</h4>
+				<p style="font-size: 15px; padding-left: 195px;">Links:</p>
+				<div class="images">
+					<a href="https://en.wikipedia.org/wiki/Cloud_computing"><img src="data:image/png;base64,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" alt="cannot load" style="height:60px;"></img></a>
+					<a href="https://www.youtube.com/results?search_query=Cloud+Computing"><img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="cannot load" style="height:60px;"></img></a>
+					<div class="popup" onclick="myFunction()">
+					<span class="popuptext" id="myPopup"> <div class="share-btns">
+						<a class="share-btn facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+						<a class="share-btn email" href="https://mail.google.com/" target="_blank">Email</a>
+					</div></span>
+					<img id="share" src="https://media.istockphoto.com/id/1186972006/vector/typing-text-chat-isolated-vector-icon-modern-geometric-illustration-three-dots-for-your.jpg?s=612x612&w=0&k=20&c=Yuz5f5Vy6gAFo0XLPRQ9FWRqroJa38C7Fd4rlIoGGLQ=" alt="cannot load" style="height:60px;"></img><p id="1"></p></div>
+				</div>
+			</div>
+			<div class="main">
+				<h1><p>List of Cloud Computing Services:</p></h1>
+				<ol style="font-size: 20px;">
+					<li><a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> - Amazon Web Services (AWS) is a comprehensive cloud platform that offers a wide range of services, including compute, storage, databases, analytics, networking, machine learning, security, and more. AWS is one of the most popular cloud computing services in the world and is used by millions of customers, including startups, enterprises, and government organizations.</li><br>
+					<li><a href="https://azure.microsoft.com/">Microsoft Azure</a> - Microsoft Azure is a cloud platform that provides a variety of services such as compute, storage, networking, analytics, databases, machine learning, and more. It is one of the largest cloud computing providers in the world and is used by many businesses of all sizes, including startups, enterprises, and government organizations.</li><br>
+					<li><a href="https://cloud.google.com/">Google Cloud Platform</a> - Google Cloud Platform (GCP) is a suite of cloud computing services provided by Google. It provides a variety of services such as compute, storage, networking, machine learning, big data, and more. GCP is widely used by many businesses, including startups, enterprises, and government organizations.</li><br>
+					<li><a href="https://www.ibm.com/cloud">IBM Cloud</a> - IBM Cloud is a cloud platform that provides a wide range of services, including compute, storage, networking, databases, analytics, AI, and more. It is designed to help businesses of all sizes to deploy and manage their applications and data in the cloud.</li><br>
+					<li><a href="https://www.oracle.com/cloud/">Oracle Cloud</a> - Oracle Cloud is a cloud platform that provides a range of services, including compute, storage, networking, databases, analytics, security, and more. It is designed to help businesses to deploy and manage their applications and data in the cloud.</li><br>
+					<li><a href="https://www.salesforce.com/">Salesforce Cloud</a> - Salesforce Cloud is a cloud platform that provides a range of services, including customer relationship management (CRM), sales, marketing, analytics, and more. It is designed to help businesses of all sizes to manage their customer relationships and sales processes.</li><br>
+					<li><a href="https://cloud.vmware.com/">VMware Cloud</a> - VMware Cloud is a cloud platform that provides a range of services, including compute, storage, networking, security, and more. It is designed to help businesses of all sizes to deploy and manage their applications and data in the cloud.</li><br>
+					<li><a href="https://www.digitalocean.com/">DigitalOcean</a> - DigitalOcean is a cloud platform that provides a range of services, including compute, storage, networking, databases, and more. It is designed to help developers to easily deploy and manage their applications in the cloud.</li><br>
+					<li><a href="https://www.alibabacloud.com/">Alibaba Cloud</a> - Alibaba Cloud is a cloud platform that provides a range of services, including compute, storage, networking, databases, analytics, and more. It is designed to help businesses to deploy and manage their applications and data in the cloud.</li><br>
+					<li><a href="https://www.alibabacloud.com/">Rackspace Cloud</a> - Rackspace Cloud is a cloud platform that provides a range of services, including compute, storage, networking, databases, and more. It is designed to help businesses of all sizes to deploy and manage their applications and data in the cloud. </li><br>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>
